@@ -41,6 +41,7 @@ ul {
 }
 
 /* TYPOGRAPHY STYLES */
+
 h1, h2, h3, h4 {
     font-family: 'Pacifico', cursive;
 }
@@ -67,3 +68,17 @@ button {
 }
 
 /* HEADER STYLES */
+
+header {
+    background-image: url(./biker-land-assets/image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 45px 0;
+}
+
+nav {
+    display: flex;
+}
+
+
