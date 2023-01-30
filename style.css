@@ -22,3 +22,48 @@ img {
 a {
     text-decoration: none;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* TYPOGRAPHY STYLES */
+h1, h2, h3, h4 {
+    font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    color: #F2A11C;
+    font-size: 6.5rem;
+}
+
+h3 {
+    font-size: 2.1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+button {
+    background: #1F2022;
+    color: #F2A11C;
+    font-weight: bold;
+    line-height: 1.45rem;
+    text-transform: uppercase;
+}
+
+/* HEADER STYLES */
