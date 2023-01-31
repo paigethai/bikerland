@@ -164,7 +164,7 @@ article {
 /* Blog Section */
 
 .blog {
-    background-color: #FFF;
+    background-color: #F4F4F4;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -182,10 +182,11 @@ article {
     width: 80%;
 }
 
-/* Gallery Section */
+/* Icons Section */
+
 .logo-links {
     background-image: url(./biker-land-assets/image-5.jpg);
-    min-height: 75vh;
+    min-height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -195,7 +196,7 @@ article {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    height: 75vh;
+    height: 50vh;
     margin: 0 auto;
     padding-top: 200px;
     text-align: center;
@@ -212,4 +213,35 @@ article {
     color: #F2A11C;
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
+}
+
+/* Gallery Section */
+
+.gallery {
+    background-color: #FFF;
+}
+
+.gallery-container {
+    padding-bottom: 150px;
+}
+
+h3 {
+    font-size: 2.1rem;
+    text-align: center;
+    margin: 0;
+    padding: 100px;
+}
+
+.gallery-images ul {
+    display: flex;
+    /* width: 75%; */
+    margin: 0 auto;
+}
+
+.gallery-images ul li {
+    display: flex;
+}
+
+.gallery-images ul li img {
+    justify-content: space-between;
 }
