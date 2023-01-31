@@ -65,6 +65,15 @@ button {
     font-weight: bold;
     line-height: 1.45rem;
     text-transform: uppercase;
+    padding: 8px 20px;
+    border: 1px solid #1F2022;
+}
+
+button:hover,
+button:focus {
+    color: #F4F4F4;
+    border: 1px solid #F4F4F4;
+    cursor: pointer;
 }
 
 /* HEADER STYLES */
@@ -77,8 +86,30 @@ header {
     padding: 45px 0;
 }
 
-nav {
+.flex-container ul {
+    width: 40%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-evenly;
 }
 
+.flex-container a {
+    color: white;
+    font-weight: bold;
+}
 
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+
+.header-social-icons ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li i {
+    background-color: white;
+}
