@@ -108,6 +108,7 @@ h1 {
 .header-social-icons ul {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
 }
 
 ul li i {
