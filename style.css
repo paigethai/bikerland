@@ -281,6 +281,18 @@ article {
     padding-top: 90px;
 }
 
+/* I still need to finish the form and button styling */
 
 
 /* Footer Section */
+
+footer {
+    background-color: #000;
+    margin: 0;
+    padding: 1rem;
+}
+
+footer p {
+    color: #F4F4F4;
+    text-align: center;
+}
