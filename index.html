@@ -39,33 +39,33 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="header-content">
-                <h1>Bikerland</h1>
-
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-instagram"></i>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-snapchat"></i>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-twitter"></i>
-                    </li>
-                </ul>
-            </div>
+            
+            <h1>Bikerland</h1>
         </div>
+
+        <div class="header-social-icons">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-snapchat"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+            </ul>
+        </div> 
     </header>
 
     <!-- Main Sections -->
     <main>
         <!-- About Section -->
         <section class="about" id="about">
-            <div class="wrapper text-container">
+            <div class="text-container">
                 <article>
                     <h3>About us</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore dolores porro officiis minus quos molestias consequuntur? Iusto aliquam qui molestias quaerat. Veritatis odit doloremque id. Voluptas, iure! Dicta, iure voluptates. Praesentium minus laboriosam, magni error maiores laudantium ea autem soluta optio! Fuga nostrum, suscipit quae dolore asperiores placeat accusantium a optio laboriosam cupiditate eligendi fugiat harum, aut rem iusto tempora!</p>
@@ -97,11 +97,11 @@
         <!-- Blog Section -->
         <section class="blog" id="blog">
             <div class="wrapper flex-container">
-                <figure>
+                <figure class="blog-image">
                     <img src="./biker-land-assets/image-6.jpg" alt="person wearing a redcoat and backpack riding briskly with blurred background">
                 </figure>
 
-                <article>
+                <article class="about-text">
                     <h2>Meet Alissa</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis fuga doloribus animi provident cumque facilis, facere corrupti architecto repellendus illo. Tenetur ducimus illo illum nemo fugiat voluptate facilis laborum excepturi!
                     Unde expedita dolorem aliquid quaerat officiis quidem sit commodi? Porro odio dignissimos molestias fugiat debitis quam accusantium eius ex. Odit nesciunt ipsum blanditiis dolorem ad nostrum nisi laboriosam. Sapiente, quaerat.
@@ -136,64 +136,71 @@
             <div class="wrapper gallery-container">
                 <h3>The Gram</h3>
 
-                <ul>
-                    <li>
-                        <img src="./biker-land-assets/image-8.jpg" alt="person in red helmet cycling through the city">
-                    </li>
-                    <li>
-                        <img src="./biker-land-assets/image-3.jpg" alt="professional cyclist participating in a marathon">
-                    </li>
-                    <li>
-                        <img src="./biker-land-assets/image-5.jpg" alt="vintage white bike leaning against rusted garage door">
-                    </li>
-                </ul>
+                <div class="gallery">
+                    <ul>
+                        <li>
+                            <img src="./biker-land-assets/image-8.jpg" alt="person in red helmet cycling through the city">
+                        </li>
+                        <li>
+                            <img src="./biker-land-assets/image-3.jpg" alt="professional cyclist participating in a marathon">
+                        </li>
+                        <li>
+                            <img src="./biker-land-assets/image-5.jpg" alt="vintage white bike leaning against rusted garage door">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <!-- Footer Navigation -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="contact-infor">
-            <h4>Contact</h4>
-            <p>info@gmail.com | 123-456-7890</p>
-            <p>123 Some Road, Toronto, ON</p>
-            <p>A5A 5A5, Canada</p>
-        </div>
-
-        <div class="contact-form">
-            <h4>Stay updated</h4>
-            <p>Subscribe to our newsletter to stay updated.</p>
-
-            <form action="#" method="POST" name="contactForm">
-                <label class="sr-only" for="email">Email Address</label>
-                <input type="email" placeholder="email" id="email" name="email">
-
-                <button type="submit">Subscribe</button>
-            </form>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="contact-info">
+                <h4>Contact</h4>
+                <p>info@gmail.com | 123-456-7890</p>
+                <p>123 Some Road, Toronto, ON</p>
+                <p>A5A 5A5, Canada</p>
+            </div>
+            
+            <div class="contact-form">
+                <h4>Stay updated</h4>
+                <p>Subscribe to our newsletter to stay updated.</p>
+            
+                <div class="form">
+                    <form action="#" method="POST" name="contactForm">
+                        <label class="sr-only" for="email">Email Address</label>
+                        <input type="email" placeholder="email" id="email" name="email">
+                    
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>Copyright © 2019 HackerYou</p>
+        <div class="wrapper">
+            <p>Copyright © 2019 HackerYou</p>
+        </div>
     </footer>
     
 </body>
