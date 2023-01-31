@@ -54,7 +54,9 @@ ul {
 
 h1, h2, h3, h4 {
     font-family: 'Pacifico', cursive;
-    text-tansform: capitalize
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+
 }
 
 h1 {
@@ -63,12 +65,18 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h2 {
     font-size: 2.1rem;
+    text-align: center;
 }
 
 p {
     font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+a {
+    letter-spacing: 0.10rem;
 }
 
 button {
@@ -86,6 +94,18 @@ button:focus {
     color: #F4F4F4;
     border: 1px solid #F4F4F4;
     cursor: pointer;
+}
+
+.contact h3 {
+    color:#F2A11C;
+}
+
+.contact-info p {
+    color: #FFF;
+}
+
+.contact-form p {
+    color: #FFF;
 }
 
 /* Header Styles */
@@ -224,24 +244,43 @@ article {
 .gallery-container {
     padding-bottom: 150px;
 }
-
-h3 {
-    font-size: 2.1rem;
-    text-align: center;
+.gallery h2 {
     margin: 0;
     padding: 100px;
 }
 
 .gallery-images ul {
     display: flex;
-    /* width: 75%; */
     margin: 0 auto;
 }
 
+/* why doesn't this work???? */
 .gallery-images ul li {
     display: flex;
+    justify-content: space-between;
 }
 
+/* why doesn't this work???? */
 .gallery-images ul li img {
     justify-content: space-between;
 }
+
+/* Contact Section */
+
+.contact {
+    min-height: 30vh;
+}
+
+.contact-nav {
+    padding-top: 100px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+
+
+/* Footer Section */
