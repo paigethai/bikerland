@@ -182,3 +182,34 @@ article {
     width: 80%;
 }
 
+/* Gallery Section */
+.logo-links {
+    background-image: url(./biker-land-assets/image-5.jpg);
+    min-height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 75vh;
+    margin: 0 auto;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.product-logo,
+.community-logo,
+.reachout-logo {
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.logos-container p {
+    color: #F2A11C;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
