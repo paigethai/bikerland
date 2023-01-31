@@ -137,6 +137,7 @@ ul li i {
 /* About Section */
 
 article {
+    padding-top: 50px;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -161,3 +162,23 @@ article {
 }
 
 /* Blog Section */
+
+.blog {
+    background-color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blog-image {
+    width: 30%;
+}
+
+.blog-image img {
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+.blog-text {
+    width: 80%;
+}
+
