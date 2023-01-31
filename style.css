@@ -5,7 +5,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-/* GLOBAL STYLES */
+/* Global Styles */
 
 html {
     font-family: 'Catamaran', sans-serif;
@@ -13,10 +13,19 @@ html {
     font-size: 125%;
 }
 
+body {
+    background-color: #1F2022;
+}
+
 img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -33,6 +42,7 @@ ul {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+    padding: 0;
 }
 
 .flex-container {
@@ -40,15 +50,17 @@ ul {
     flex-direction: row;
 }
 
-/* TYPOGRAPHY STYLES */
+/* Typography Styles */
 
 h1, h2, h3, h4 {
     font-family: 'Pacifico', cursive;
+    text-tansform: capitalize
 }
 
 h1 {
     color: #F2A11C;
     font-size: 6.5rem;
+    text-align: center;
 }
 
 h3 {
@@ -76,15 +88,18 @@ button:focus {
     cursor: pointer;
 }
 
-/* HEADER STYLES */
+/* Header Styles */
 
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     padding: 45px 0;
 }
+
+/* Navigation Styles */
 
 .flex-container ul {
     width: 40%;
@@ -98,6 +113,7 @@ header {
     font-weight: bold;
 }
 
+/* H1 Heading Styling */
 h1 {
     margin: 0 auto;
     text-align: center;
@@ -105,12 +121,43 @@ h1 {
     top: 300px;
 }
 
+/* Social Media Header Icons Styling */
 .header-social-icons ul {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 ul li i {
     background-color: white;
 }
+
+/* Main Sections */
+
+/* About Section */
+
+article {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.about {
+    background-color: #FFF;
+}
+.about-top-row {
+    display: flex;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.about-bottom-row {
+    display: flex;
+}
+
+/* Blog Section */
