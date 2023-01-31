@@ -281,6 +281,7 @@ article {
     display: flex;
     justify-content: space-between;
     padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 /* I still need to finish the form and button styling */
