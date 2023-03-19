@@ -10,6 +10,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 html {
     font-family: 'Catamaran', sans-serif;
     color: #1F2022;
+    /* 1 rem = 20px */
     font-size: 125%;
 }
 
@@ -108,18 +109,16 @@ button:focus {
     color: #FFF;
 }
 
-/* Header Styles */
-
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    width: 100%;
     padding: 45px 0;
 }
 
-/* Navigation Styles */
 
 .flex-container ul {
     width: 40%;
@@ -133,25 +132,30 @@ header {
     font-weight: bold;
 }
 
-/* H1 Heading Styling */
 h1 {
     margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 300px;
 }
 
-/* Social Media Header Icons Styling */
+.h1-icons {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-social-icons {
+    text-align: right;
+    margin-right: 4rem;
+
+}
 .header-social-icons ul {
     display: flex;
     flex-direction: column;
-    /* margin-left: auto; */
 }
 
-/* Would like help from a mentor on how to properly position the social media icons */
-
 ul li i {
-    background-color: white;
+    background-color: inherit;
+    color: #F2A11C;
+    padding: 0.5rem;
 }
 
 /* Main Sections */
