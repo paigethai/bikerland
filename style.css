@@ -19,7 +19,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -40,6 +40,7 @@ ul {
 }
 
 .wrapper {
+    border: 3px solid red;
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
@@ -86,7 +87,8 @@ button {
     font-weight: bold;
     line-height: 1.45rem;
     text-transform: uppercase;
-    padding: 8px 20px;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
     border: 1px solid #1F2022;
 }
 
@@ -121,7 +123,7 @@ header {
 
 
 .flex-container ul {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
@@ -158,14 +160,19 @@ ul li i {
     padding: 0.5rem;
 }
 
-/* Main Sections */
-
 /* About Section */
 
 article {
-    padding-top: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 2.5rem 4rem 0 4rem;
+}
+
+article h2 {
+    text-align: left;
+}
+
+article p {
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .about {
@@ -179,7 +186,7 @@ article {
     width: 50%;
 }
 
-.image-container {
+.about-top-row img {
     width: 50%;
 }
 
@@ -187,25 +194,27 @@ article {
     display: flex;
 }
 
-/* Blog Section */
+.about-bottom-row img {
+    width: 50%;
+}
 
 .blog {
     background-color: #F4F4F4;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 2.5rem 0;
 }
 
-.blog-image {
-    width: 30%;
-}
-
-.blog-image img {
-    padding-top: 50px;
-    margin-bottom: 80px;
+.blog img {
+    width: 40%;
+    padding: 8rem 0;
 }
 
 .blog-text {
-    width: 80%;
+    width: 60%;
+    padding: 2rem;
+}
+
+.blog-text h2 {
+    padding-top: 3.5rem;
 }
 
 /* Icons Section */
@@ -219,26 +228,28 @@ article {
 }
 
 .logos-container {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
+    width: 70%;
     height: 50vh;
     margin: 0 auto;
-    padding-top: 200px;
-    text-align: center;
+    padding-top: 6.5rem;
 }
 
-.product-logo,
-.community-logo,
-.reachout-logo {
-    color: #FFF;
-    font-size: 2.5rem;
+.logos-container ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos-container i {
+    color: white;
+    font-size: 3rem;
+    align-items: center;
 }
 
 .logos-container p {
     color: #F2A11C;
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
 
 /* Gallery Section */
