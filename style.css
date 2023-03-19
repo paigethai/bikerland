@@ -5,11 +5,10 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-/* Global Styles */
-
 html {
     font-family: 'Catamaran', sans-serif;
     color: #1F2022;
+    /* 1 rem = 20px */
     font-size: 125%;
 }
 
@@ -18,7 +17,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -50,8 +49,6 @@ ul {
     flex-direction: row;
 }
 
-/* Typography Styles */
-
 h1, h2, h3, h4 {
     font-family: 'Pacifico', cursive;
     text-transform: capitalize;
@@ -77,6 +74,7 @@ p {
 
 a {
     letter-spacing: 0.10rem;
+    line-height: 1.5rem;
 }
 
 button {
@@ -85,7 +83,8 @@ button {
     font-weight: bold;
     line-height: 1.45rem;
     text-transform: uppercase;
-    padding: 8px 20px;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
     border: 1px solid #1F2022;
 }
 
@@ -94,6 +93,16 @@ button:focus {
     color: #F4F4F4;
     border: 1px solid #F4F4F4;
     cursor: pointer;
+}
+
+i:hover, 
+i:focus {
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+article h2 {
+    text-align: left;
 }
 
 .contact h3 {
@@ -108,21 +117,19 @@ button:focus {
     color: #FFF;
 }
 
-/* Header Styles */
-
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    width: 100%;
     padding: 45px 0;
 }
 
-/* Navigation Styles */
 
 .flex-container ul {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
@@ -133,35 +140,44 @@ header {
     font-weight: bold;
 }
 
-/* H1 Heading Styling */
 h1 {
     margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 300px;
 }
 
-/* Social Media Header Icons Styling */
+.h1-icons {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-social-icons {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-align: right;
+}
+
 .header-social-icons ul {
     display: flex;
     flex-direction: column;
-    /* margin-left: auto; */
 }
-
-/* Would like help from a mentor on how to properly position the social media icons */
 
 ul li i {
-    background-color: white;
+    background-color: inherit;
+    color: #F2A11C;
+    padding: 1rem;
 }
-
-/* Main Sections */
 
 /* About Section */
 
 article {
-    padding-top: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 2.5rem 4rem 0 4rem;
+}
+
+article p {
+    padding-bottom: 1rem;
 }
 
 .about {
@@ -175,36 +191,39 @@ article {
     width: 50%;
 }
 
-.image-container {
+.about-top-row img {
     width: 50%;
+    object-fit: cover;
 }
 
 .about-bottom-row {
     display: flex;
 }
 
-/* Blog Section */
+.about-bottom-row img {
+    width: 50%;
+    object-fit: cover;
+}
 
 .blog {
     background-color: #F4F4F4;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 2.5rem 0;
 }
 
-.blog-image {
-    width: 30%;
-}
-
-.blog-image img {
-    padding-top: 50px;
-    margin-bottom: 80px;
+.blog img {
+    width: 40%;
+    padding: 8rem 0;
+    object-fit: cover;
 }
 
 .blog-text {
-    width: 80%;
+    width: 60%;
+    padding: 2rem;
 }
 
-/* Icons Section */
+.blog-text h2 {
+    padding-top: 3.5rem;
+}
 
 .logo-links {
     background-image: url(./biker-land-assets/image-5.jpg);
@@ -215,29 +234,29 @@ article {
 }
 
 .logos-container {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
+    width: 70%;
     height: 50vh;
     margin: 0 auto;
-    padding-top: 200px;
-    text-align: center;
+    padding-top: 5.5rem;
 }
 
-.product-logo,
-.community-logo,
-.reachout-logo {
-    color: #FFF;
-    font-size: 2.5rem;
+.logos-container ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos-container i {
+    color: white;
+    font-size: 3rem;
+    align-items: center;
 }
 
 .logos-container p {
     color: #F2A11C;
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
-
-/* Gallery Section */
 
 .gallery {
     background-color: #FFF;
@@ -251,23 +270,23 @@ article {
     padding: 100px;
 }
 
-.gallery-images ul {
-    display: flex;
-    margin: 0 auto;
-}
-
-/* why doesn't this work???? */
-.gallery-images ul li {
+.gallery-images {
     display: flex;
     justify-content: space-between;
 }
 
-/* why doesn't this work???? */
-.gallery-images ul li img {
-    justify-content: space-between;
+.gallery-images li {
+    width: 33.3%;
 }
 
-/* Contact Section */
+.gallery-images img {
+    padding: 1.5rem;
+}
+
+.gallery-1 {
+    padding: 10rem 0;
+}
+
 
 .contact {
     min-height: 30vh;
@@ -284,18 +303,274 @@ article {
     padding-bottom: 90px;
 }
 
-/* I still need to finish the form and button styling */
+.contact-info {
+    width: 50%;
+}
 
+.contact-form {
+    width: 45%;
+}
 
-/* Footer Section */
+form {
+    width: 100%;
+}
+
+form input {
+    width: 70%;
+    padding: 0.5rem;
+}
+
+form button {
+    width: 27%;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #F2A11C;
+    color: #000;
+}
 
 footer {
     background-color: #000;
     margin: 0;
-    padding: 1rem;
+    padding: 0.25rem;
 }
 
 footer p {
     color: #F4F4F4;
     text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .blog-text h2 {
+        padding-top: 4.5rem;
+    }
+
+    .logos-container {
+        padding-top: 7rem;
+    }
+}
+
+@media (max-width: 980px) {
+    button {
+        margin-bottom: 1.5rem;
+    }
+    .header-social-icons  {
+        margin-right: 2rem;
+    }
+
+    .about-top-row {
+        flex-direction: column-reverse;
+    }
+
+    .about-bottom-row {
+        flex-direction: column;
+    }
+
+    .about-bottom-row img {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .about-top-row img {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+
+    .text-container {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    article {
+        padding: 0 5rem;
+    }
+
+    article h2 {
+        text-align: center;
+    }
+
+    .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .blog-text {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .blog-text h2 {
+        padding: 0;
+    }
+
+    .flex-container img {
+        width: 75%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+
+    .gallery h2 {
+        padding: 3rem 0;
+    }
+
+    .gallery-images li {
+        width: 68%;
+        margin: 0 auto;
+    }
+
+    .gallery-images img {
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .input-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-button button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 780px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    .h1-icons {
+        flex-direction: column;
+    }
+
+    .header-social-icons {
+        position: absolute;
+        top: 40rem;
+        left: 31%;
+    }
+
+    .header-social-icons ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-container ul {
+        width: 100%;
+    }
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .input-button {
+        width: 75%;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .header-social-icons {
+        left: 21%;
+    }
+
+    .contact-wrapper {
+        padding: 3rem 0 5rem 0;
+    }
+
+    .contact-form h3 {
+        margin-top: 3rem;
+    }
+
+    article {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .flex-container a {
+        font-size: 0.8rem;
+    }
+
+    .header-social-icons {
+        left: 9%;
+        font-size: 1.5rem;
+    }
+
+    .about-top-row img {
+        width: 85%;
+    }
+
+    .about-bottom-row img {
+        width: 85%;
+    }
+
+    .blog {
+        padding: 1rem 0;
+    }
+
+    .blog-text {
+        padding: 1rem;
+    }
+
+    article p {
+        font-size: 0.9rem;
+    }
+
+    .logo-links {
+        min-height: 50vh;
+    }
+
+    .logos-container {
+        padding-top: 1rem;
+    }
+    
+    .logos-container ul {
+        flex-direction: column;
+    }
+
+    .logos-container li {
+        text-align: center;
+    }
+
+    .logos-container i {
+        font-size: 2rem;
+    }
+
+    .contact-form p {
+        text-align: center;
+    }
 }
