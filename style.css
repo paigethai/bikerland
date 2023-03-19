@@ -95,6 +95,12 @@ button:focus {
     cursor: pointer;
 }
 
+i:hover, 
+i:focus {
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
 article h2 {
     text-align: left;
 }
