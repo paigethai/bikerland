@@ -40,7 +40,6 @@ ul {
 }
 
 .wrapper {
-    border: 3px solid red;
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
@@ -188,6 +187,7 @@ article p {
 
 .about-top-row img {
     width: 50%;
+    object-fit: cover;
 }
 
 .about-bottom-row {
@@ -196,6 +196,7 @@ article p {
 
 .about-bottom-row img {
     width: 50%;
+    object-fit: cover;
 }
 
 .blog {
@@ -206,6 +207,7 @@ article p {
 .blog img {
     width: 40%;
     padding: 8rem 0;
+    object-fit: cover;
 }
 
 .blog-text {
@@ -216,8 +218,6 @@ article p {
 .blog-text h2 {
     padding-top: 3.5rem;
 }
-
-/* Icons Section */
 
 .logo-links {
     background-image: url(./biker-land-assets/image-5.jpg);
@@ -231,7 +231,7 @@ article p {
     width: 70%;
     height: 50vh;
     margin: 0 auto;
-    padding-top: 6.5rem;
+    padding-top: 5.5rem;
 }
 
 .logos-container ul {
@@ -252,8 +252,6 @@ article p {
     text-align: center;
 }
 
-/* Gallery Section */
-
 .gallery {
     background-color: #FFF;
 }
@@ -266,23 +264,23 @@ article p {
     padding: 100px;
 }
 
-.gallery-images ul {
-    display: flex;
-    /* margin: 0 auto; */
-}
-
-/* why doesn't this work???? */
-.gallery-images ul li {
+.gallery-images {
     display: flex;
     justify-content: space-between;
 }
 
-/* why doesn't this work???? */
-.gallery-images ul li img {
-    justify-content: space-between;
+.gallery-images li {
+    width: 33.3%;
 }
 
-/* Contact Section */
+.gallery-images img {
+    padding: 1.5rem;
+}
+
+.gallery-1 {
+    padding: 10rem 0;
+}
+
 
 .contact {
     min-height: 30vh;
@@ -299,15 +297,37 @@ article p {
     padding-bottom: 90px;
 }
 
+.contact-info {
+    width: 50%;
+}
+
+.contact-form {
+    width: 45%;
+}
+
+form {
+    width: 100%;
+}
+
+form input {
+    width: 70%;
+    padding: 0.5rem;
+}
+
+form button {
+    width: 27%;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #F2A11C;
+    color: #000;
+}
+
 /* I still need to finish the form and button styling */
-
-
-/* Footer Section */
 
 footer {
     background-color: #000;
     margin: 0;
-    padding: 1rem;
+    padding: 0.25rem;
 }
 
 footer p {
